@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "textile-atelier",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "textile-atelier.moldandyeast.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./public"
+  }
+}
