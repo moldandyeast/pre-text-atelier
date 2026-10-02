@@ -191,7 +191,11 @@ input[type="range"]::-moz-range-thumb { width: 9px; height: 16px; background: va
 #credits a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 :root:fullscreen #credits, :root:has(:fullscreen) #credits { display: none; }
 @media (display-mode: fullscreen) { #credits { display: none; } }
-@media (max-width: 760px) { #credits b { flex-basis: 100%; } }
+@media (max-width: 760px) {
+  #credits b { flex-basis: 100%; }
+  #credits ul { gap: 4px 14px; }
+  #credits li + li { margin-left: 0; padding-left: 0; border-left: 0; }
+}
 </style>
 
 <div id="app">
